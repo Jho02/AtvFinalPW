@@ -1,0 +1,8 @@
+.body{
+    padding: 1000px;
+    margin: 100px;
+    opacity: 100px;
+}
+.fundo{
+    opacity: inherit;
+}
