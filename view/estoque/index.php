@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/style.css">
-</head>
 
+    <title> Cadastro estoque </title>
+</head>
 <body class="bg-secondary">
     <div class="container-fluid col-xl-12 bg-secondary">
         <div class=" px-1 py-0 mt-1 my-0  bg-light shadow rounded ">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse">
                     <li class="nav-item navbar navbar-brand bg-success px-1 py-0 rounded-sm  ">
-                        <a href="index.php" class="font-weight nav-link lead text-dark">Home</a>
+                        <a href="../home/index.php" class="font-weight nav-link lead text-dark">Home</a>
                     </li>
                     <ul class="navbar-nav nav nav-tabs">
                         <li class="nav-item dropdown mx-5">
                             <a class="nav-link lead dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               <a class="dropdown-item" href="../estoque/index.php">Estoque</a>
+                               <a class="dropdown-item" href="index.php">Estoque</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Produtos</a>
+                                <a class="dropdown-item" href="../produto/index.php">Produtos</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Vendas</a>
+                                <a class="dropdown-item" href="../venda/index.php">Vendas</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown  mx-5 ">
@@ -43,7 +43,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
                                 <a class="dropdown-item" href="#">Estoque</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Produtos</a>
+                                <a class="dropdown-item" href="">Produtos</a>
                             </div>
                         </li>
                     </ul>
@@ -52,33 +52,45 @@
                     <a href="../login/index.php" class="nav-link navbar-brand text-danger">Sair</a>
                 </li>
             </nav>
-
-
         </div>
+  
+
+   
         <div class="row bg-white mx-5 px-5  my-1 col-lg-11 rounded-sm " style="height: 570px; ">
-            <div class="col-lg-5 row py-3  mx-2 ">
-                <h4 class=" font-weight-light pt-3 pl-5 bd-title">Produtos Cadastrados</h4>
-                <hr class="mt-3 mb-3" />
-            </div>
-            <div class="mx-auto pt-3 pb-2 row">
-                <span class="border"></span>
-            </div>
-            <div class="col-lg-5 row py-3  mx-2">
-                <h4 class=" font-weight-light pt-3  bd-title pl-5">Estoque de Produtos</h4>
-            </div>
-        </div>
+           
+      
+            <form class="my-3 mx-auto col-lg-6">
 
+                <h1 class="py-lg-2 font-weight-light display-5 text-center">Bugigangas do Paraguai</h1>
+                <h4 class=" font-weight-light py-3 pl-5 bd-title text-center ">Cadastro do estoque</h4>
+
+                <div class="form-group ">
+                <label for="exampleInputText1">Código do produto</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+                </div>
+
+                <div class="form-group">
+                <label for="exampleInputNum1">Quantidade</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                
+                <div class="form-row ">
+                    <div class="col-lg-5 my-3 mx-auto">
+                        <button type="submit" class="btn btn-success btn-lg">Cadastrar</button>
+                    </div>
+                </div>
+                 
+              
+
+              
+            </form>
     </div>
-    
 
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
     <script src="../../node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
-  
-
-
 
 </body>
-
 </html>
